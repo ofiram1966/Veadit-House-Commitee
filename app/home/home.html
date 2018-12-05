@@ -7,11 +7,16 @@
           <h5 class="lead">VeadiT Has Evrything  You Need To Manage The House Commitee</h5>
         </div>
       </div>
-      <div class="row" >
-      <div id="jumbo1" class="jumbotron jumbotron-fluid">
+      <div class="row" ng-controller="homeCtrl">
+      <div id="jumbo1" class="jumbotron jumbotron-fluid" ng-mouseover="showPopover()" ng-mouseleave="hidePopover()">
             <div id="container" class="container" >
               <h4 class="display-2" >Tanants</h4>
             </div>
+            <div class="popover" ng-show="popoverIsVisible"> <p>
+                Add all home tanants to your community. Every One of the tanants will have a private account. 
+                Share important messages & problems\issues and update your decisions.
+            </p>
+          </div>
           </div>
           <div id="jumbo1" class="jumbotron jumbotron-fluid">
                 <div id="container" class="container">
