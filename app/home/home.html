@@ -8,7 +8,7 @@
         </div>
       </div>
       <div class="row" ng-controller="homeCtrl">
-      <div id="jumbo1" class="jumbotron jumbotron-fluid" ng-mouseover="showPopover()" ng-mouseleave="hidePopover()">
+      <div id="jumbo1" class="jumbotron jumbotron-fluid" ng-mouseover="showPopover('tenants')" ng-mouseleave="hidePopover(tanants)">
             <div id="container" class="container" >
               <h4 class="display-2" >Tanants</h4>
             </div>
@@ -17,11 +17,11 @@
             </p>
           </div>
           </div>
-          <div id="jumbo1" class="jumbotron jumbotron-fluid" ng-mouseover="showPopover1()" ng-mouseleave="hidePopover1()">
+          <div id="jumbo1" class="jumbotron jumbotron-fluid" ng-mouseover="showPopover(Issues)" ng-mouseleave="hidePopover(Issues)">
                 <div id="container" class="container">
                   <h4 class="display-2">Issues</h4>
                 </div>
-                <div class="popover" ng-show="popoverIsVisible1"> <p>
+                <div class="popover" ng-show="popoverIsVisible"> <p>
                   Load all home Issues\problemes to your community. Lorem Ipsum is simply dummy text of the printing and Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum.
               </p>
             </div>
@@ -31,6 +31,7 @@
                       <h4 class="display-2">Votings</h4>
                     </div>
                   </div>
+                  
                   
                   <div id="jumbo1" class="jumbotron jumbotron-fluid" >
                         <div id="container" class="container">

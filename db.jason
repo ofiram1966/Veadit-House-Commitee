@@ -1,0 +1,30 @@
+"users": [
+        {
+            "id": 1,
+            "fname": "ofir",
+            "lname": "amsallem",
+            "email": "ofiram7@gmail.com",
+            "pwd": "1234"
+        },
+        {
+            "id": 2,
+            "fname": "roni",
+            "lname": "amsallem",
+            "email": "rony@rony.com",
+            "pwd": "1234"
+        }
+        {
+            "id": 3,
+            "fname": "eran",
+            "lname": "keinan",
+            "email": "eran@eran.com",
+            "pwd": "1234"
+        }
+        {
+            "id": 4,
+            "fname": "John",
+            "lname": "Doe",
+            "email": "john@john.com",
+            "pwd": "1234"
+        }
+    ],
