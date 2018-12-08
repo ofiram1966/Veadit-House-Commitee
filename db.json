@@ -4,7 +4,7 @@
             "id": 1,
             "fname": "ofir",
             "lname": "amsallem",
-            "email": "ofiram7@gmail.com",
+            "email": "ofir@ofir.com",
             "pwd": "1234"
         },
         {
@@ -17,15 +17,22 @@
         {
             "id": 3,
             "fname": "eran",
-            "lname": "keinan",
+            "lname": "",
             "email": "eran@eran.com",
             "pwd": "1234"
         },
         {
             "id": 4,
-            "fname": "John",
-            "lname": "Doe",
-            "email": "john@john.com",
+            "fname": "david",
+            "lname": "Davidy",
+            "email": "david@david.com",
+            "pwd": "1234"
+        },
+        {
+            "id": 5,
+            "fname": "israel",
+            "lname": "israeli",
+            "email": "israel@israel.com",
             "pwd": "1234"
         }
     ]
