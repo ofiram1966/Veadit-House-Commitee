@@ -10,10 +10,10 @@ app.config(function ($routeProvider) {
             templateUrl: "app/login/login.html",
             controller: "loginCtrl"
         })
-        // .when("/dashboard", {
-        //     templateUrl: "app/dashboard/dashboard.html",
-        //     controller: "dashboardCtrl"
-        // })
+        .when("/dashboard", {
+            templateUrl: "app/dashboard/dashboard.html",
+            controller: "dashboardCtrl"
+        })
         // .when("/messages", {
         //     templateUrl: "app/messages/messages.html",
         //     controller: "messageCtrl"
