@@ -1,7 +1,7 @@
 app.controller("navbarCtrl",function($scope ){
 
   $scope.isUserLoggedIn=function(){
-      return true;
+      return false;
   }
 //   $scope.isUserLoggedIn = function () {
 //     return user.isLoggedIn();
