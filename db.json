@@ -6,7 +6,7 @@
             "fname": "ofir",
             "lname": "amsallem",
             "email": "ofir@ofir.com",
-            "isCommitteeMember": "true",
+            "isCommitteeMember": true,
             "pwd": "1234"
         },
         {
