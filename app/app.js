@@ -14,10 +14,10 @@ app.config(function ($routeProvider) {
             templateUrl: "app/dashboard/dashboard.html",
             controller: "dashboardCtrl"
         })
-        // .when("/messages", {
-        //     templateUrl: "app/messages/messages.html",
-        //     controller: "messageCtrl"
-        // })
+        .when("/messages", {
+            templateUrl: "app/messages/messages.html",
+            controller: "messageCtrl"
+        })
         // .when("/issues", {
         //     templateUrl: "app/issues/issues.html",
         //     controller: "issueCtrl"
@@ -30,8 +30,8 @@ app.config(function ($routeProvider) {
         //     templateUrl: "app/tenants/tenants.html",
         //     controller: "tenantsCtrl"
         // })
-        // .when("/signUp", {
-        //     templateUrl: "app/signUp/signUp.html",
-        //     controller: "signUpCtrl"
-        // })
+        .when("/signUp", {
+            templateUrl: "app/signUp/signUp.html",
+            controller: "signUpCtrl"
+        })
 });
