@@ -13,8 +13,8 @@ app.factory("user", function($q, $http) {
          function login(email, pwd) {
             var async = $q.defer();
     
-            // var loginURL = "http://my-json-server.typicode.com/nirch/recipe-book-v3/users?email=" +
-            //     email + "&pwd=" + pwd;
+            var loginURL = "http://my-json-server.typicode.com/ofiram1966/Veadit-House-Commitee/users?email=" +
+                email + "&pwd=" + pwd;
             $http.get(loginURL).then(function(response) {
                 if (response.data.length > 0) {
                     // success login
