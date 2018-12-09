@@ -8,6 +8,8 @@ app.factory("user", function($q, $http) {
         this.lname = plainUser.lname;
         this.email = plainUser.email;
         this.pwd = plainUser.pwd;
+        this.isCommitteeMember = plainUser.isCommitteeMember;
+        this.apartment = plainUser.apartment;
          }
 
 
@@ -33,6 +35,9 @@ app.factory("user", function($q, $http) {
         }
         function isLoggedIn() {
             return activeUser ? true : false;
+        }
+        function isAdmin() {
+            return activeUser.isCommitteeMember ? true : false;
         }
     
         function logout() {
