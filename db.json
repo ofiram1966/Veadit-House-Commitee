@@ -3,8 +3,8 @@
         {
             "id": 1,
             "aprtment":"1",
-            "fname": "ofir",
-            "lname": "amsallem",
+            "fname": "Ofir",
+            "lname": "Amsallem",
             "email": "ofir@ofir.com",
             "committeeMember": true,
             "pwd": "1234"
@@ -12,8 +12,8 @@
         {
             "id": 2,
             "aprtment":"2",
-            "fname": "roni",
-            "lname": "amsallem",
+            "fname": "Roni",
+            "lname": "Adar",
             "email": "rony@rony.com",
             "committeeMember": true,
             "pwd": "1234"
@@ -21,27 +21,27 @@
         {
             "id": 3,
             "aprtment":"3",
-            "fname": "eran",
-            "lname": "kainan",
-            "email": "eran@eran.com",
+            "fname": "Dafna",
+            "lname": "Dekel",
+            "email": "dafna@dafna.com",
             "committeeMember": false,
             "pwd": "1234"
         },
         {
             "id": 4,
             "aprtment":"4",
-            "fname": "david",
-            "lname": "Davidy",
-            "email": "david@david.com",
+            "fname": "Noa",
+            "lname": "Tishbi",
+            "email": "noa@noa.com",
             "committeeMember": false,
             "pwd": "1234"
         },
         {
             "id": 5,
             "aprtment":"5",
-            "fname": "israel",
-            "lname": "israeli",
-            "email": "israel@israel.com",
+            "fname": "Eyal",
+            "lname": "Golan",
+            "email": "eyal@eyal.com",
             "committeeMember": false,
             "pwd": "1234"
         }
