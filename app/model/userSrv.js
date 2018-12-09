@@ -8,7 +8,7 @@ app.factory("user", function($q, $http) {
         this.lname = plainUser.lname;
         this.email = plainUser.email;
         this.pwd = plainUser.pwd;
-        this.isCommitteeMember = plainUser.isCommitteeMember;
+        this.committeeMember = plainUser.committeeMember;
         this.apartment = plainUser.apartment;
          }
 
