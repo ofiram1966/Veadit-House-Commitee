@@ -51,6 +51,7 @@ app.factory("user", function($q, $http) {
         return {
             login: login,
             isLoggedIn: isLoggedIn,
+            isAdmin:isAdmin,
             logout: logout,
             getActiveUser: getActiveUser
         }
