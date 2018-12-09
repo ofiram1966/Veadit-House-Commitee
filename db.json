@@ -6,7 +6,7 @@
             "fname": "ofir",
             "lname": "amsallem",
             "email": "ofir@ofir.com",
-            "isCommitteeMember": true,
+            "committeeMember": true,
             "pwd": "1234"
         },
         {
@@ -15,7 +15,7 @@
             "fname": "roni",
             "lname": "amsallem",
             "email": "rony@rony.com",
-            "isCommitteeMember": "true",
+            "committeeMember": true,
             "pwd": "1234"
         },
         {
@@ -24,7 +24,7 @@
             "fname": "eran",
             "lname": "kainan",
             "email": "eran@eran.com",
-            "isCommitteeMember": "false",
+            "committeeMember": false,
             "pwd": "1234"
         },
         {
@@ -33,7 +33,7 @@
             "fname": "david",
             "lname": "Davidy",
             "email": "david@david.com",
-            "isCommitteeMember": "false",
+            "committeeMember": false,
             "pwd": "1234"
         },
         {
@@ -42,7 +42,7 @@
             "fname": "israel",
             "lname": "israeli",
             "email": "israel@israel.com",
-            "isCommitteeMember": "false",
+            "committeeMember": false,
             "pwd": "1234"
         }
     ]

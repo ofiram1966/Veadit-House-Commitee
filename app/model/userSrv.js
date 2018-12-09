@@ -37,7 +37,7 @@ app.factory("user", function($q, $http) {
             return activeUser ? true : false;
         }
         function isAdmin() {
-            return activeUser.isCommitteeMember ? true : false;
+            return activeUser.committeeMember ? true : false;
         }
     
         function logout() {
