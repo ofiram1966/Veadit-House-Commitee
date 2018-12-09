@@ -1,6 +1,7 @@
 app.factory("user", function($q, $http) {
 
     var activeUser = null;
+    
     function User(plainUser) {
         this.id = plainUser.id;
         this.fname = plainUser.fname;
