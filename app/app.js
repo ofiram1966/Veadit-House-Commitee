@@ -24,7 +24,7 @@ app.config(function ($routeProvider) {
         })
         .when("/votings", {
             templateUrl: "app/votings/votings.html",
-            controller: "votingCtrl"
+            controller: "votingsCtrl"
         })
         .when("/tenants", {
             templateUrl: "app/tenants/tenants.html",
