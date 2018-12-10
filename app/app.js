@@ -20,16 +20,16 @@ app.config(function ($routeProvider) {
         })
         .when("/issues", {
             templateUrl: "app/issues/issues.html",
-            controller: "issueCtrl"
+            controller: "issuesCtrl"
         })
-        // .when("/votings", {
-        //     templateUrl: "app/votings/votings.html",
-        //     controller: "votingCtrl"
-        // })
-        // .when("/tenants", {
-        //     templateUrl: "app/tenants/tenants.html",
-        //     controller: "tenantsCtrl"
-        // })
+        .when("/votings", {
+            templateUrl: "app/votings/votings.html",
+            controller: "votingCtrl"
+        })
+        .when("/tenants", {
+            templateUrl: "app/tenants/tenants.html",
+            controller: "tenantsCtrl"
+        })
         .when("/signUp", {
             templateUrl: "app/signUp/signUp.html",
             controller: "signUpCtrl"
