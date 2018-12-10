@@ -18,10 +18,10 @@ app.config(function ($routeProvider) {
             templateUrl: "app/messages/messages.html",
             controller: "messagesCtrl"
         })
-        // .when("/issues", {
-        //     templateUrl: "app/issues/issues.html",
-        //     controller: "issueCtrl"
-        // })
+        .when("/issues", {
+            templateUrl: "app/issues/issues.html",
+            controller: "issueCtrl"
+        })
         // .when("/votings", {
         //     templateUrl: "app/votings/votings.html",
         //     controller: "votingCtrl"
