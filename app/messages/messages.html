@@ -1,3 +1,27 @@
 <navbar-veadit></navbar-veadit>
 
-<h1>This is A Massegas Page</h1>
+<div>
+    <div class="jumbotron jumbotron-fluid">
+        <div id="container" class="container">
+          <h1 class="display-2">Massages</h1>
+          <h3>{{activeUser.fname + " " + activeUser.lname}}-Welcome to your Massges screnn</h3>
+          <h5 class="lead">VeadiT Comunity Let You see House Commitee Massages</h5>
+           <!-- Open Modal -->
+           <br>
+           <button type="button" class="btn btn-outline-success" ng-show="isUserAdmin()" data-toggle="modal" data-target="#ModalCenter">Add New Massage</button>
+           
+        </div>
+      </div>
+      <div id="mainPic" class="jumbotron">
+    
+      <div id="messageAccordion">
+        <div class="card" ng-repeat="message in messageArr">
+            <div class="card-header" id="heading">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#messageCollapse{{$index}}" aria-expanded="true" aria-controls="collapse{{$index}}">
+                        {{message.title}}
+                    </button>
+                </h5>
+            </div>
+    
+           
