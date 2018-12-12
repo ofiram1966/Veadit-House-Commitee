@@ -3,18 +3,22 @@
 <div>
     <div class="jumbotron jumbotron-fluid">
         <div id="container" class="container">
-          <h1 class="display-2">Massages</h1>
-          <h3>{{activeUser.fname + " " + activeUser.lname}}-Welcome to your Massges screnn</h3>
-          <h5 class="lead">VeadiT Comunity Let You see House Commitee Massages</h5>
-           <!-- Open Modal -->
-           <br>
-           <button type="button" class="btn btn-outline-success" ng-show="isUserAdmin()" data-toggle="modal" data-target="#ModalCenter">Add New Massage</button>
-           
+            <h1 class="display-2">Massages</h1>
+            <h3>{{activeUser.fname + " " + activeUser.lname}}-Welcome to your Massges screnn</h3>
+            <h5 class="lead">VeadiT Comunity Let You see House Commitee Massages</h5>
+            <!-- Open Modal -->
+            <br>
+            <button type="button" class="btn btn-outline-success" ng-show="isUserAdmin()" data-toggle="modal"
+                data-target="#ModalCenter">Add New Massage</button>
         </div>
-      </div>
-      <div id="mainPic" class="jumbotron">
-    
-        <div id="messageAccordion">
+    </div>
+    <!-- <div id="mainPic" class="jumbotron"> -->
+    <div class="container">
+        <messages-accordion></messages-accordion>
+    </div>
+    <!-- /div> -->
+
+    <!-- <div id="messageAccordion">
             <div class="card" ng-repeat="message in messageArr">
                 <div class="card-header" id="heading">
                     <h5 class="mb-0">
@@ -33,10 +37,10 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-      <!-- Modal -->
-      <div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+        </div> -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -49,7 +53,8 @@
                     <form>
                         <div class="form-group">
                             <label for="inputTitle">Message title</label>
-                            <input type="text" class="form-control" id="inputTitle" placeholder="Messgae Title" ng-model="newMessage.title">
+                            <input type="text" class="form-control" id="inputTitle" placeholder="Messgae Title"
+                                ng-model="newMessage.title">
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlTextarea1">Message Details</label>
@@ -73,5 +78,4 @@
         </div>
     </div>
 
-    </div>
-           
+</div>

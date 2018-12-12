@@ -32,6 +32,6 @@ app.config(function ($routeProvider) {
         })
         .when("/signUp", {
             templateUrl: "app/signUp/signUp.html",
-            controller: "signUpCtrl"
+            controller: "signupCtrl"
         })
 });

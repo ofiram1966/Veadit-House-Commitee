@@ -1,5 +1,7 @@
-app.directive('messagesAccordion', function () {
+app.directive("messagesAccordion", function () {
     return {
-        templateUrl: "app/messages/messages.html"
+        templateUrl: "app/messages/messagesAccordion.html"
+        // controller: "messagesCtrl"
+    
     }
 })
