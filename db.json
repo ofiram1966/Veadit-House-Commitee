@@ -1,8 +1,23 @@
 {
+    "communities": [{
+        "id": 1,
+        "name": "My Home",
+        "address": "Tavor 151",
+        "city": "Nofit"
+    },
+    
+    {
+        "id": 2,
+        "name": "My Home",
+        "address": "Sela 13",
+        "city": "Shoham"
+    }
+],
 "users": [
         {
             "id": 1,
             "aprtment":"1",
+            "communityId": 1,
             "fname": "Ofir",
             "lname": "Amsallem",
             "email": "ofir@ofir.com",
@@ -12,6 +27,7 @@
         {
             "id": 2,
             "aprtment":"2",
+            "communityId": 2,
             "fname": "Roni",
             "lname": "Adar",
             "email": "roni@roni.com",
@@ -21,15 +37,28 @@
         {
             "id": 3,
             "aprtment":"3",
+            "communityId": 1,
             "fname": "Dafna",
             "lname": "Dekel",
             "email": "dafna@dafna.com",
             "committeeMember": false,
             "pwd": "1234"
         },
+       
         {
             "id": 4,
             "aprtment":"4",
+            "communityId": 1,
+            "fname": "Eyal",
+            "lname": "Golan",
+            "email": "eyal@eyal.com",
+            "committeeMember": false,
+            "pwd": "1234"
+        },
+        {
+            "id": 5,
+            "aprtment":"5",
+            "communityId": 2,
             "fname": "Noa",
             "lname": "Tishbi",
             "email": "noa@noa.com",
@@ -37,13 +66,107 @@
             "pwd": "1234"
         },
         {
-            "id": 5,
-            "aprtment":"5",
-            "fname": "Eyal",
-            "lname": "Golan",
-            "email": "eyal@eyal.com",
+            "id": 6,
+            "aprtment":"6",
+            "communityId": 2,
+            "fname": "Ilana",
+            "lname": "Dayan",
+            "email": "ilna@ilana.com",
             "committeeMember": false,
             "pwd": "1234"
         }
-    ]
+    ],
+    "messages":[
+    {
+        "id": 1,
+        "userId": 1,
+        "communityId":1,
+        "creationTime": "2018-11-03T12:34:44.110Z",
+        "title": "1st message",
+        "details": "Message details...blabla..blabla...",
+        "priority": "High",
+        "comments": [{
+            "memberId": 1,
+            "creationTime": "",
+            "details": "Comment",
+            "comments": []
+        }]
+    },
+    {
+        "id": 2,
+        "userId": 1,
+        "communityId":1,
+        "creationTime": "2018-11-12T12:00:00.110Z",
+        "title": "2nd message",
+        "details": "Message details...blabla..blabla....",
+        "priority": "Medium",
+        "comments": [{
+            "memberId": 1,
+            "creationTime": "",
+            "details": "Comment",
+            "comments": []
+        }]
+    },
+    {
+        "id": 3,
+        "userId":  1,
+        "communityId":1,
+        "creationTime": "2018-12-03T12:34:44.110Z",
+        "title": "3rd message",
+        "details": "Message details...blabla..blabla...",
+        "priority": "High",
+        "comments": [{
+            "memberId": 1,
+            "creationTime": "",
+            "details": "Comment",
+            "comments": []
+        }]
+    },
+    {
+        "id": 4,
+        "userId": 2,
+        "communityId":2,
+        "creationTime": "2018-11-06T12:34:44.110Z",
+        "title": "4th message",
+        "details": "Message details...blabla..blabla...",
+        "priority": "Low",
+        "comments": [{
+            "memberId": 1,
+            "creationTime": "",
+            "details": "Comment",
+            "comments": []
+        }]
+    },
+   
+     {
+        "id": 5,
+        "userId":  2,
+        "communityId":2,
+        "creationTime": "2018-11-22T12:34:44.110Z",
+        "title": "5th message",
+        "details": "Message details...blabla..blabla...",
+        "priority": "Medium",
+        "comments": [{
+            "memberId": 1,
+            "creationTime": "",
+            "details": "Comment",
+            "comments": []
+        }]
+    },
+    {
+        "id": 6,
+        "userId":  2,
+        "communityId":2,
+        "creationTime": "2018-12-13T12:34:44.110Z",
+        "title": "5th message",
+        "details": "Message details...blabla..blabla...",
+        "priority": "Medium",
+        "comments": [{
+            "memberId": 1,
+            "creationTime": "",
+            "details": "Comment",
+            "comments": []
+        }]
+    }
+]
 }
