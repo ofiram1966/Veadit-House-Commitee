@@ -12,33 +12,14 @@
                 data-target="#ModalCenter">Add New Massage</button>
         </div>
     </div>
-    <!-- <div id="mainPic" class="jumbotron"> -->
+
+    <div id="mainPic" class="jumbotron">
     <div class="container">
-        <messages-accordion></messages-accordion>
+        <message-accordion></message-accordion>
     </div>
-    <!-- /div> -->
+    /div>
 
-    <!-- <div id="messageAccordion">
-            <div class="card" ng-repeat="message in messageArr">
-                <div class="card-header" id="heading">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#messageCollapse{{$index}}" aria-expanded="true" aria-controls="collapse{{$index}}">
-                            {{message.title}}
-                        </button>
-                    </h5>
-                </div>
-        
-                <div id="messageCollapse{{$index}}" class="collapse" ng-class="{show : $index===0}" aria-labelledby="heading" data-parent="#messageAccordion">
-                    <div class="card-body">
-                        <div>Title: {{message.title}}</div>
-                        <div>Details: {{message.details}}</div>
-                        <div>Created on: {{message.creationTime | date : 'medium'}}</div>
-                        <button type="button" class="btn btn-xs btn-success" ng-show="isUserAdmin()" ng-click="deleteMessage(message)">Delete</button>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
+   
     <!-- Modal -->
     <div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
