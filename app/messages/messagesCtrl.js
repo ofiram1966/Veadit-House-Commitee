@@ -31,15 +31,4 @@ app.controller("messagesCtrl",function($scope, user, $location ){
 
 });
 
-        "memberId": 1,
-        "communityId":1,
-        "creationTime": "2018-11-03T12:34:44.110Z",
-        "title": "1st message",
-        "details": "Message details...blabla..blabla...",
-        "priority": "High",
-        "comments": [{
-        "memberId": 1,
-        "creationTime": "",
-        "details": "Comment",
-        "comments": []
-        }]
+       
