@@ -1,4 +1,4 @@
-app.controller("IssuesCtrl",function($scope, user, $location ){
+app.controller("issuesCtrl",function($scope, user, $location ){
 
 
     

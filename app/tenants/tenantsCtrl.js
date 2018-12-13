@@ -1,4 +1,4 @@
-app.controller("tanantsCtrl",function($scope, user, $location ){
+app.controller("tenantsCtrl",function($scope, user, $location ){
 
 
 });

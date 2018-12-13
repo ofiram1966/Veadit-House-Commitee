@@ -14,12 +14,27 @@
     </div>
 
     <div id="mainPic" class="jumbotron">
-    <div class="container">
-        <message-accordion></message-accordion>
-    </div>
-    /div>
+        <div class="container mt-5">
+            <h1>Tenants</h1>
 
-   
+            <div class="row">
+                <div class="col-sm-6 col-md-4 my-2" ng-repeat="message in messages">
+                    <div class="card massage">
+                        <img class="card-img-top" ng-src="{{recipe.imgUrl}}" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">Title:{{message.title}}</h4>
+                            <p class="card-text">Details:{{message.detailes}}</p>
+                            <h4 class="card-title">Created-On::{{message.creationtime}}</h4>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <!-- Modal -->
     <div class="modal fade" id="ModalCenter" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -59,4 +74,5 @@
         </div>
     </div>
 
+</div>
 </div>
