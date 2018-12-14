@@ -10,7 +10,7 @@ app.factory("messages", function($q, $http,user) {
         this.title = plainMessage.title;
         this.details = plainMessage.details;
         this.priority = plainMessage.priority;
-        this.comments = plainMessage.comments;
+       
     }
 
     function getActiveUserMessages(){

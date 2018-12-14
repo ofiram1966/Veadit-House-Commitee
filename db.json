@@ -85,6 +85,7 @@
         "title": "1st message",
         "details": "Message details...blabla..blabla...",
         "priority": "High",
+        "imgUrl":"assets/images/message7.jpg",
 
 
         "comments": [{
@@ -102,6 +103,7 @@
         "title": "2nd message",
         "details": "Message details...blabla..blabla....",
         "priority": "Medium",
+        "imgUrl":"assets/images/message7.jpg",
 
         "comments": [{
         "memberId": 1,
@@ -118,6 +120,7 @@
         "title": "3rd message",
         "details": "Message details...blabla..blabla...",
         "priority": "High",
+        "imgUrl":"assets/images/message7.jpg",
 
 
         "comments": [{
@@ -135,6 +138,7 @@
         "title": "4th message",
         "details": "Message details...blabla..blabla...",
         "priority": "Low",
+        "imgUrl":"assets/images/message7.jpg",
 
         
         "comments": [{
@@ -153,6 +157,7 @@
         "title": "5th message",
         "details": "Message details...blabla..blabla...",
         "priority": "Medium",
+        "imgUrl":"assets/images/message7.jpg",
 
 
         "comments": [{
@@ -170,6 +175,7 @@
         "title": "5th message",
         "details": "Message details...blabla..blabla...",
         "priority": "Medium",
+        "imgUrl":"assets/images/message7.jpg",
 
 
         "comments": [{
