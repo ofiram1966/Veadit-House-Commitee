@@ -10,6 +10,6 @@ messages.getActiveUserMessages().then(function (messages){
 
 
 
-});
+})
 
        

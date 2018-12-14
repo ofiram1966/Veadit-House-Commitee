@@ -14,15 +14,15 @@ app.factory("messages", function($q, $http,user) {
     }
 
     function getActiveUserMessages(){
-        
         var async = $q.defer();
     
 
         var getMessagesURL =  "https://my-json-server.typicode.com/ofiram1966/Veadit-House-Commitee/messages?userId=" + 
         user.getActiveUser().id;
 
+        // var getMessagesURL =  "https://my-json-server.typicode.com/ofiram1966/Veadit-House-Commitee/messages?userId=" + 
         $http.get(getMessagesURL).then(function (response) {
-            for (var i=0; i<response.data.length; i++){
+            for (var i=0; i < response.data.length; i++){
                 var message = new Message(response.data[i]);
                 messages.push(message);
             }
@@ -36,7 +36,7 @@ app.factory("messages", function($q, $http,user) {
          return async.promise;
     }
     return {
-        getActiveuserMessages : getActiveuserMessages
+        getActiveUserMessages : getActiveUserMessages
         
     }
 })

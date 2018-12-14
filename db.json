@@ -85,7 +85,7 @@
         "title": "1st message",
         "details": "Message details...blabla..blabla...",
         "priority": "High",
-        "imgUrl":"assets/images/message7.jpg",
+        "imgUrl":"https://www.messagehero.com/wp-content/uploads/2014/04/Icon_Widget_BlogUpdates.png",
 
 
         "comments": [{
