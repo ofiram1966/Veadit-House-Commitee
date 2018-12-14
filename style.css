@@ -23,7 +23,7 @@ color: aqua;
 }
 
 #jumbo1{
-    position: relative;
+    position: abrelative;
    background-color: rgb(131, 195, 239);
   left:20px;
     width: 475px;
@@ -57,4 +57,12 @@ color: aqua;
     color: black;
     background-color: rgb(199, 221, 138);
 
+}
+
+.row h4{
+    color:black;
+}
+.row p{
+    color:black;
+    font-weight: bold;
 }

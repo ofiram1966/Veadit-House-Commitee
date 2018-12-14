@@ -15,15 +15,13 @@
 
     <div id="mainPic" class="jumbotron">
         <div class="container mt-5">
-            <h1>Tenants</h1>
-
             <div class="row">
-                <div class="col-sm-6 col-md-4 my-2" ng-repeat="message in messages">
+                <div class="col-sm-6 col-md-3 my-2" ng-repeat="message in messages">
                     <div class="card massage">
-                        <img class="card-img-top" ng-src="{{recipe.imgUrl}}" alt="">
+                        <img class="card-img-top" ng-src="{{message.imgUrl}}" alt="">
                         <div class="card-body">
                             <h4 class="card-title">Title:{{message.title}}</h4>
-                            <p class="card-text">Details:{{message.detailes}}</p>
+                            <p class="card-text">Details:{{message.details}}</p>
                             <h4 class="card-title">Created-On::{{message.creationtime}}</h4>
                             
                         </div>
@@ -32,7 +30,7 @@
             </div>
         </div>
     </div>
-
+    
 
 
     <!-- Modal -->
