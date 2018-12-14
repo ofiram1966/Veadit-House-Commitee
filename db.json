@@ -79,12 +79,14 @@
     "messages":[
     {
         "id": 1,
-        "memberId": 1,
+        "userId": 1,
         "communityId":1,
         "creationTime": "2018-11-03T12:34:44.110Z",
         "title": "1st message",
         "details": "Message details...blabla..blabla...",
         "priority": "High",
+
+
         "comments": [{
         "memberId": 1,
         "creationTime": "",
@@ -94,12 +96,13 @@
     },
     {
         "id": 2,
-        "memberId": 1,
+        "userId": 3,
         "communityId":1,
         "creationTime": "2018-11-12T12:00:00.110Z",
         "title": "2nd message",
         "details": "Message details...blabla..blabla....",
         "priority": "Medium",
+
         "comments": [{
         "memberId": 1,
         "creationTime": "",
@@ -109,12 +112,14 @@
     },
     {
         "id": 3,
-        "memberId": 1,
+        "uerId": 4,
         "communityId":1,
         "creationTime": "2018-12-03T12:34:44.110Z",
         "title": "3rd message",
         "details": "Message details...blabla..blabla...",
         "priority": "High",
+
+
         "comments": [{
         "memberId": 1,
         "creationTime": "",
@@ -124,12 +129,14 @@
     },
     {
         "id": 4,
-        "memberId": 2,
+        "userId": 2,
         "communityId":2,
         "creationTime": "2018-11-06T12:34:44.110Z",
         "title": "4th message",
         "details": "Message details...blabla..blabla...",
         "priority": "Low",
+
+        
         "comments": [{
         "memberId": 1,
         "creationTime": "",
@@ -140,12 +147,14 @@
    
      {
         "id": 5,
-        "memberId": 2,
+        "userId": 5,
         "communityId":2,
         "creationTime": "2018-11-22T12:34:44.110Z",
         "title": "5th message",
         "details": "Message details...blabla..blabla...",
         "priority": "Medium",
+
+
         "comments": [{
         "memberId": 1,
         "creationTime": "",
@@ -155,12 +164,14 @@
     },
     {
         "id": 6,
-        "memberId": 2,
+        "userId": 6,
         "communityId":2,
         "creationTime": "2018-12-13T12:34:44.110Z",
         "title": "5th message",
         "details": "Message details...blabla..blabla...",
         "priority": "Medium",
+
+
         "comments": [{
         "memberId": 1,
         "creationTime": "",
