@@ -40,16 +40,22 @@ color: aqua;
     font-size: 50px;
     font-weight: bold;
 }
+#jumbo1 p{
+    text-align: center;
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+}
 .popover{
-    position: absolute;
+    position: relative;
     z-index: 100;
     font-size: 20px;
     font-family: "acme";
     background-color: rgb(240, 206, 164);
-    color: blue;
+    /* color: blue; */
     text-align: center;
     left: 100px;
-    top:80px;
+    top:15px;
     /* margin-left: 150px;; */
 
 }
@@ -65,4 +71,4 @@ color: aqua;
 .row p{
     color:black;
     font-weight: bold;
-}
+} 
