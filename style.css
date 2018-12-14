@@ -68,6 +68,10 @@ color: aqua;
 .row h4{
     color:black;
 }
+.row h6{
+    color:black;
+    font-weight: bold;
+}
 .row p{
     color:black;
     font-weight: bold;

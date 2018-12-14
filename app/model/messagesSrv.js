@@ -17,11 +17,12 @@ app.factory("messages", function($q, $http,user) {
     function getActiveUserMessages(){
         var async = $q.defer();
     
-
-        var getMessagesURL =  "https://my-json-server.typicode.com/ofiram1966/Veadit-House-Commitee/messages?userId=" + 
+        messages = [];
+        var getMessagesURL =  "https://my-json-server.typicode.com/ofiram1966/Veadit-House-Commitee/messages?communityId="+
         user.getActiveUser().id;
+       
 
-        // var getMessagesURL =  "https://my-json-server.typicode.com/ofiram1966/Veadit-House-Commitee/messages?userId=" + 
+       
         $http.get(getMessagesURL).then(function (response) {
             for (var i=0; i < response.data.length; i++){
                 var message = new Message(response.data[i]);
