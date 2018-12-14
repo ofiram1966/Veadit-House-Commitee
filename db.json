@@ -112,7 +112,7 @@
     },
     {
         "id": 3,
-        "uerId": 4,
+        "userId": 4,
         "communityId":1,
         "creationTime": "2018-12-03T12:34:44.110Z",
         "title": "3rd message",
