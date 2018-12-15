@@ -1,2 +1,15 @@
 <navbar-veadit></navbar-veadit>
-<h1>This is The votings Screen</h1>
+
+
+<div class="jumbotron jumbotron-fluid">
+        <div id="container" class="container">
+            <h1 class="display-2">Votings</h1>
+            <h3>{{activeUser.fname + " " + activeUser.lname}}-Welcome to your Massges screnn</h3>
+            <h5 class="lead">VeadiT Comunity Let You see House Commitee Votings</h5>
+            <!-- Open Modal -->
+            <br>
+            <button type="button" class="btn btn-outline-success" ng-show="isUserAdmin()" data-toggle="modal"
+                data-target="#ModalCenter">Add New vote</button>
+        </div>
+    </div>
+    <div id="mainPic" class="jumbotron"></div>

@@ -7,7 +7,11 @@ messages.getActiveUserMessages().then(function (messages){
 },function(error){
 
 })
-
+$scope.deleteMessage = function (message) {
+    messages.deleteMessage(message).then(function () {}, function () {
+        console.log("error");
+    })
+}
 
 
 })

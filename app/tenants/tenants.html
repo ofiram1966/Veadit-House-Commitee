@@ -1,30 +1,72 @@
 <navbar-veadit></navbar-veadit>
-
+<div>
 <div class="jumbotron jumbotron-fluid">
-    <div id="container" class="container">
-        <h1 class="display-2">Tenants</h1>
-        <h3>{{activeUser.fname + " " + activeUser.lname}}-Welcome to your Tenanat screnn</h3>
-        <h5 class="lead">VeadiT Comunity Let You Create & Add  New Tenant At Your building</h5>
-        <!-- Open Modal -->
-        <br>
-        <button type="button" class="btn btn-outline-success" ng-show="isUserAdmin()" data-toggle="modal"
-            data-target="#ModalCenter">Add Tenant</button>
-    </div>
-</div>
-
-<div class="container">
-    <div class="row">
-        <div class="margin-auto col-sm-6 col-lg-3" ng-repeat="tenant in tenantsArr">
-            <div class="card mt-3" ng-click="showPic(pic)" ng-class="{'myActive':isActive===pic}">
-                <img class="img-fluid" ng-src="{{tenant.picture}}" alt="{{name}}">
-                <div class="card-body">
-                    <h5 class="card-title">{{tenant.fname+" "+tenant.lname}}</h5>
-                    <p class="card-title">Apartment {{tenant.apartment}}</p>
-                    <p class="card-title">email: {{tenant.email}}</p>
-
-                    <button type="button" class="btn btn-lg btn-success" ng-click="deleteTenant(tenant)">Delete</button>
-                </div>
-            </div>
+        <div id="container" class="container">
+            <h1 class="display-2">Tenants</h1>
+            <h3>{{activeUser.fname + " " + activeUser.lname}}-Welcome to your Tenants screnn</h3>
+            <h5 class="lead">VeadiT Comunity Let You see House Commitee Massages</h5>
+            <!-- Open Modal -->
+            <br>
+            <button type="button" class="btn btn-outline-success" ng-show="isUserAdmin()" data-toggle="modal"
+                data-target="#ModalCenter">Add New Massage</button>
         </div>
     </div>
-</div>
+
+
+
+<div id="tenantjumotron" class="jumbotron">
+  
+        div  class="container mt-5">
+        <form class="tenantform1">
+            <div class="form-group row">
+                <label for="name" class="col-sm-2 col-form-label">First Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="fname" ng-model="newTenant.fname">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="description" class="col-sm-2 col-form-label">Last Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="lname" ng-model="newTenant.lname">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="ingrediants" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" ng-model="newTenant.email">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="steps" class="col-sm-2 col-form-label">Apartment Number</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="apartment" ng-model="newTenant.apartment">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="psssword" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="password" ng-model="newTenant.password">
+                </div>
+            </div>
+            <!-- <div class="form-group row">
+                    <label for="image" class="col-sm-2 col-form-label">Image Url</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="image" ng-model="image">
+                    </div>
+                </div> -->
+            <div class="form-group row">
+                <label for="image" class="col-sm-2 col-form-label">Image Url</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="image" ng-model="image" />
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-12">
+                    <button type="button" class="btn btn-block btn-lg btn-primary" ng-click="createTenant()">Create Tenanat</button>
+                </div>
+            </div>
+        </form>
+        <img class="img-fluid" ng-src="{{image}}" alt="{{name}}">
+    </div>    
+    </div>
+    </div>

@@ -39,6 +39,7 @@ app.factory("user", function($q, $http) {
         function isAdmin() {
             return activeUser.committeeMember ? true : false;
         }
+        
     
         function logout() {
             activeUser = null;
@@ -47,12 +48,17 @@ app.factory("user", function($q, $http) {
         function getActiveUser() {
             return activeUser;
         }
+        
+       
+
     
         return {
             login: login,
             isLoggedIn: isLoggedIn,
             isAdmin:isAdmin,
             logout: logout,
-            getActiveUser: getActiveUser
+            getActiveUser: getActiveUser,
+           
+           
         }
 })

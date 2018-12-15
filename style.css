@@ -76,3 +76,19 @@ color: aqua;
     color:black;
     font-weight: bold;
 } 
+.form-group{
+    position:relative;
+    color: black;
+    font-weight: bold;
+    /* width: 800px; */
+    margin: 0,auto;
+}
+#tenantjumotron{
+    margin-top:5px;
+   height: 500px;
+   background-color: rgb(123, 174, 209)
+}
+/* .voting1 {
+    margin-top: 550px;
+    height:200px; 
+} */
