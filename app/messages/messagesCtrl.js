@@ -1,5 +1,10 @@
-app.controller("messagesCtrl",function($scope,user, messages ){
-    
+app.controller("messagesCtrl",function($scope,user, messages,$location ){
+    // Checking if the user is currently logged in,
+    // if not redirecting to the home page
+    if (!user.isLoggedIn()) {
+        $location.path("/");
+        return;
+    }
     $scope.activeUser = user.getActiveUser(); 
 messages.getActiveUserMessages().then(function (messages){
     $scope.messages = messages;
