@@ -1,7 +1,7 @@
 app.factory("messages", function($q, $http,user) {
 
      var messages = [];
-    //  var wasEverLoaded = {};
+     var wasEverLoaded = false;
     
     function Message(plainMessage) {
         this.id = plainMessage.id;
@@ -17,6 +17,10 @@ app.factory("messages", function($q, $http,user) {
 
     function getActiveUserMessages(){
         var async = $q.defer();
+        if (wasEverLoaded) {
+            async.resolve(messages);
+        }else{
+
     
         // messages = [];
         var getMessagesURL =  "https://my-json-server.typicode.com/ofiram1966/Veadit-House-Commitee/messages?communityId="+
@@ -27,13 +31,14 @@ app.factory("messages", function($q, $http,user) {
                 var message = new Message(response.data[i]);
                 messages.push(message);
             }
+            wasEverLoaded = true;
             async.resolve(messages);
 
         }, function (error) {
             async.reject(error);
                    
         })
-
+    }
          return async.promise;
     }
     function getCommunityNum(){
@@ -54,38 +59,39 @@ app.factory("messages", function($q, $http,user) {
 // user Delete Message
    
 
-    // function deleteMessage(message) {
-    //     var async = $q.defer();
-    //     var msgId = message.id;
-    //     var messagesURL ="https://my-json-server.typicode.com/ofiram1966/Veadit-House-Commitee/messages/"+messageId
+    function deleteMessage(message) {
+        var async = $q.defer();
+        var msgId = message.id;
+        var messagesURL ="https://my-json-server.typicode.com/ofiram1966/Veadit-House-Commitee/messages/"+messageId
       
-    //     $http.delete(messagesURL).then(function (response) {
-    //         var i = findWithAttr(messages, "id", messageId);
-    //         messageArr.splice(i, 1);
-    //         async.resolve(messages);
-    //     }, function (error) {
-    //         async.reject(error);
-    //     });
-    //     return async.promise;
-    // }
+        $http.delete(messagesURL).then(function (response) {
+            var i = slectedMessage(messages, "id", messageId);
+            messageArr.splice(i, 1);
+            async.resolve(messages);
+        }, function (error) {
+            async.reject(error);
+        });
+        return async.promise;
+    }
    
 
 
-    // function findWithAttr(array, attr, value) {
-    //     for (var i = 0; i < array.length; i += 1) {
-    //         if (array[i][attr] === value) {
-    //             return i;
-    //         }
-    //     }
-    //     return -1;
-    // }
+    function selctedMessage(array, attr, value) {
+        for (var i = 0; i < array.length; i += 1) {
+            if (array[i][attr] === value) {
+                return i;
+            }
+        }
+        return -1;
+    }
 
 
     return {
         getActiveUserMessages : getActiveUserMessages,
         getCommunityNum: getCommunityNum,
-        createMessage: createMessage
-        // deleteMessage: deleteMessage,
+        createMessage: createMessage,
+        deleteMessage: deleteMessage,
+        selctedMessage:selctedMessage
         
         
     }

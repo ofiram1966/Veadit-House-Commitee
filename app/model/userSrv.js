@@ -1,4 +1,4 @@
-app.factory("user", function($q, $http) {
+app.factory("user", function($q, $http,) {
 
     var activeUser = null;
 
