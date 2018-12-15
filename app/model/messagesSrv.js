@@ -17,7 +17,7 @@ app.factory("messages", function($q, $http,user) {
     function getActiveUserMessages(){
         var async = $q.defer();
     
-        messages = [];
+        // messages = [];
         var getMessagesURL =  "https://my-json-server.typicode.com/ofiram1966/Veadit-House-Commitee/messages?communityId="+
         
         user.getActiveUser().id ;

@@ -52,7 +52,7 @@
             "fname": "Eyal",
             "lname": "Golan",
             "email": "eyal@eyal.com",
-            "committeeMember": true,
+            "committeeMember": false,
             "pwd": "1234"
         },
         {
@@ -83,7 +83,7 @@
         "communityId":1,
         "creationTime": "2018-11-03T09:30",
         "title": "1st message",
-        "details": "Message details...blabla..blabla...",
+        "details": "Message for community 1 details...blabla..blabla...",
         "priority": "High",
         "imgUrl":"assets/images/message7.jpg",
 
@@ -100,7 +100,7 @@
         "communityId":1,
         "creationTime": "2018-11-12T12:00",
         "title": "2nd message",
-        "details": "Message details...blabla..blabla....",
+        "details": "Message for community 1 details...blabla..blabla...",
         "priority": "Medium",
         "imgUrl":"assets/images/message7.jpg",
 
@@ -117,7 +117,7 @@
         "communityId":1,
         "creationTime": "2018-12-03T10:34",
         "title": "3rd message",
-        "details": "Message details...blabla..blabla...",
+        "details": "Message for community 1 details...blabla..blabla...",
         "priority": "High",
         "imgUrl":"assets/images/message7.jpg",
 
@@ -135,7 +135,7 @@
         "communityId":2,
         "creationTime": "2018-11-06T17:24",
         "title": "4th message",
-        "details": "Message details...blabla..blabla...",
+        "details": "Message for community 2 details...blabla..blabla...",
         "priority": "Low",
         "imgUrl":"assets/images/message7.jpg",
 
@@ -154,7 +154,7 @@
         "communityId":2,
         "creationTime": "2018-11-22T18:34",
         "title": "5th message",
-        "details": "Message details...blabla..blabla...",
+        "details":"Message for community 2 details...blabla..blabla...",
         "priority": "Medium",
         "imgUrl":"assets/images/message7.jpg",
 
@@ -172,7 +172,7 @@
         "communityId":2,
         "creationTime": "2018-12-13T20:21",
         "title": "5th message",
-        "details": "Message details...blabla..blabla...",
+        "details": "Message for community 2 details...blabla..blabla...",
         "priority": "Medium",
         "imgUrl":"assets/images/message7.jpg",
 
