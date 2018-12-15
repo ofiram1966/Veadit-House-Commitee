@@ -39,17 +39,17 @@ app.factory("messages", function($q, $http,user) {
         return messages.communityId ? 2 : 1;
     }
    
-    // function createMessage(communityId, creationTime, title, details, priority,imgUrl){
-    //  var async = $q.defer();
-    //  var newMessage = new Message({id:-1, communityId: communityId, creationTime: creationTime,
-    //     title: title, details: details, priority:priority, imgUrl: imgUrl, 
-    //     userId: user.getActiveUser().id});
+    function createMessage(communityId, creationTime, title, details, priority,imgUrl){
+     var async = $q.defer();
+     var newMessage = new Message({id:-1, communityId: communityId, creationTime: creationTime,
+        title: title, details: details, priority:priority, imgUrl: imgUrl, 
+        userId: user.getActiveUser().id});
 
-    //     messages.push(newMessage);
-    //     async.resolve(newMessage);
+        messages.push(newMessage);
+        async.resolve(newMessage);
 
 
-    // }
+    }
 // user Delete Message
    
 
@@ -83,8 +83,8 @@ app.factory("messages", function($q, $http,user) {
     return {
         getActiveUserMessages : getActiveUserMessages,
         getCommunityNum: getCommunityNum,
+        createMessage: createMessage
         // deleteMessage: deleteMessage,
-        // createMessage:createMessage
         
         
     }

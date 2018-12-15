@@ -12,8 +12,14 @@ $scope.deleteMessage = function (message) {
         console.log("error");
     })
 }
-
+$scope.createMessage = function () {
+    recipes.createMessage($scope.communityId, $scope.creationTime, 
+        $scope.title, $scope.details, $scope.priority,  $scope.image).then(function () {
+        $location.path("/messages")
+    }, function (err) {
+        console.log(err);
+    })
+}
 
 })
 
-       
