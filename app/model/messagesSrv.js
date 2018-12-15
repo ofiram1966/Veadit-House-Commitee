@@ -1,6 +1,7 @@
 app.factory("messages", function($q, $http,user) {
 
      var messages = [];
+    //  var wasEverLoaded = {};
     
     function Message(plainMessage) {
         this.id = plainMessage.id;
@@ -17,7 +18,7 @@ app.factory("messages", function($q, $http,user) {
     function getActiveUserMessages(){
         var async = $q.defer();
     
-        messages = [];
+        // messages = [];
         var getMessagesURL =  "https://my-json-server.typicode.com/ofiram1966/Veadit-House-Commitee/messages?communityId="+
        getCommunityNum()
         // user.getActiveUser().communityId;

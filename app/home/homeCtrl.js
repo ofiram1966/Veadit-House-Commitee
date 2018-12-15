@@ -1,5 +1,6 @@
 
 app.controller("homeCtrl", function($scope) {
+  
 
     $scope.showPopover = function() {
         $scope.popoverIsVisible = true; 
