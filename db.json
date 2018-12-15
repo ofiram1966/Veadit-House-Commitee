@@ -52,7 +52,7 @@
             "fname": "Eyal",
             "lname": "Golan",
             "email": "eyal@eyal.com",
-            "committeeMember": false,
+            "committeeMember": true,
             "pwd": "1234"
         },
         {
