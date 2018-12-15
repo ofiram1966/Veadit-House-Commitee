@@ -38,6 +38,18 @@ app.factory("messages", function($q, $http,user) {
     function getCommunityNum(){
         return messages.communityId ? 2 : 1;
     }
+   
+    // function createMessage(communityId, creationTime, title, details, priority,imgUrl){
+    //  var async = $q.defer();
+    //  var newMessage = new Message({id:-1, communityId: communityId, creationTime: creationTime,
+    //     title: title, details: details, priority:priority, imgUrl: imgUrl, 
+    //     userId: user.getActiveUser().id});
+
+    //     messages.push(newMessage);
+    //     async.resolve(newMessage);
+
+
+    // }
 // user Delete Message
    
 
@@ -65,12 +77,14 @@ app.factory("messages", function($q, $http,user) {
     //         }
     //     }
     //     return -1;
-    }
+    // }
+
+
     return {
         getActiveUserMessages : getActiveUserMessages,
         getCommunityNum: getCommunityNum,
-        deleteMessage: deleteMessage
-        
+        // deleteMessage: deleteMessage,
+        // createMessage:createMessage
         
         
     }
