@@ -19,7 +19,6 @@ app.factory("messages", function($q, $http,user) {
     
         // messages = [];
         var getMessagesURL =  "https://my-json-server.typicode.com/ofiram1966/Veadit-House-Commitee/messages?communityId="+
-        
         user.getActiveUser().id ;
        
 
