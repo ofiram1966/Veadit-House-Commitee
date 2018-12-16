@@ -1,6 +1,7 @@
 app.controller("messagesCtrl",function($scope,user, messages,$location ){
     // Checking if the user is currently logged in,
     // if not redirecting to the home page
+    debugger;
     if (!user.isLoggedIn()) {
         $location.path("/");
         return;
@@ -20,6 +21,8 @@ $scope.deleteMessage = function (message) {
     })
 }
 $scope.createMessage = function () {
+    debugger;
+    // var obj = {id:as ,class:"dk"}
     messges.createMessage($scope.communityId, $scope.creationTime, 
         $scope.title, $scope.details, $scope.priority,  $scope.image).then(function () {
         $location.path("/messages")

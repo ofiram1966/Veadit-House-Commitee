@@ -22,10 +22,11 @@ app.factory("messages", function($q, $http,user) {
         }else{
 
     
-        // messages = [];
+        messages = [];
         var getMessagesURL =  "https://my-json-server.typicode.com/ofiram1966/Veadit-House-Commitee/messages?communityId="+
-       getCommunityNum()
-        // user.getActiveUser().communityId;
+         getCommunityNum();
+    //    user.getActiveUser().id;
+        
         $http.get(getMessagesURL).then(function (response) {
             for (var i=0; i < response.data.length; i++){
                 var message = new Message(response.data[i]);
@@ -46,7 +47,10 @@ app.factory("messages", function($q, $http,user) {
     }
    
     function createMessage(communityId, creationTime, title, details, priority,imgUrl){
+        alert("bla 11");
+
      var async = $q.defer();
+    //  debugger;
      var newMessage = new Message({id:-1, communityId: communityId, creationTime: creationTime,
         title: title, details: details, priority:priority, imgUrl: imgUrl, 
         userId: user.getActiveUser().id});
@@ -60,18 +64,21 @@ app.factory("messages", function($q, $http,user) {
    
 
     function deleteMessage(message) {
-        var async = $q.defer();
-        var msgId = message.id;
-        var messagesURL ="https://my-json-server.typicode.com/ofiram1966/Veadit-House-Commitee/messages/"+messageId
+        debugger;
+        var index = messages.indexOf(message);
+        messages.splice(index,1);
+        // var async = $q.defer();
+        // var msgId = message.id;
+        // var messagesURL ="https://my-json-server.typicode.com/ofiram1966/Veadit-House-Commitee/messages/"+messageId
       
-        $http.delete(messagesURL).then(function (response) {
-            var i = slectedMessage(messages, "id", messageId);
-            messageArr.splice(i, 1);
-            async.resolve(messages);
-        }, function (error) {
-            async.reject(error);
-        });
-        return async.promise;
+        // $http.delete(messagesURL).then(function (response) {
+        //     var i = slectedMessage(messages, "id", messageId);
+        //     messageArr.splice(i, 1);
+        //     async.resolve(messages);
+        // }, function (error) {
+        //     async.reject(error);
+        // });
+        // return async.promise;
     }
    
 

@@ -92,3 +92,12 @@ color: aqua;
     margin-top: 550px;
     height:200px; 
 } */
+
+#fb>ul>li,  #fb>ul> h6  {
+    list-style: none;
+    display: inline-block;
+  
+  }
+  footer {
+    background-color: lightgray;
+  }
