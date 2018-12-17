@@ -47,8 +47,7 @@ app.factory("messages", function($q, $http,user) {
     }
    
     function createMessage(communityId, creationTime, title, details, priority,imgUrl){
-        alert("bla 11");
-
+       
      var async = $q.defer();
     //  debugger;
      var newMessage = new Message({id:-1, communityId: communityId, creationTime: creationTime,
